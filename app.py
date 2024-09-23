@@ -33,5 +33,5 @@ st.map(df)
 
 st.subheader('The histogram of the median house value')
 fig, ax = plt.subplots(figsize=(20, 10))
-df.median_house_value.plot.hist(ax=ax,bins=30, antialiased=False)
+df.median_house_value.plot.hist(ax=ax,bins=100, antialiased=False)
 st.pyplot(fig)
