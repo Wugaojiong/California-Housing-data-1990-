@@ -1,0 +1,5 @@
+streamlit
+pip install matplotlib
+pip install WordCloud
+pip install seaborn
+pip install pandas
