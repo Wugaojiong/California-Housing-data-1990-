@@ -31,7 +31,7 @@ elif income_level == 'High':
 st.map(df)
 
 st.subheader('Median house value')
-fig, ax = plt.subplots(figsize=(5, 5))
+fig, ax = plt.subplots(figsize=(20, 5))
 plt.style.use('seaborn-v0_8')
 df.median_house_value.hist(bins=30, ax=ax,rwidth=1)
 st.pyplot(fig)
