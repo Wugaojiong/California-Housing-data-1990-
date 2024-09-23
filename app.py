@@ -14,7 +14,7 @@ ocean_proximity_filter = st.sidebar.multiselect(
      df.ocean_proximity.unique()    
 )
 
-income_level = st.radio('Choose income level:', ['Low', 'Medium', 'High'])
+income_level = st.sidebar.radio('Choose income level:', ['Low', 'Medium', 'High'])
 
 
 df = df[df.median_house_value >= minimal_median_house_filter]
