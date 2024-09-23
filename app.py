@@ -30,8 +30,8 @@ elif income_level == 'High':
 
 st.map(df)
 
-st.subheader('Total Population By Country')
+st.subheader('Median house value')
 fig, ax = plt.subplots(figsize=(20, 5))
-pop_sum = df.groupby('country')['population'].sum()
-pop_sum.plot.bar(ax=ax)
+Median_house_value = df.median_house_value.hist(bins=30)
+Median_house_value.plot.bar(ax=ax)
 st.pyplot(fig)
