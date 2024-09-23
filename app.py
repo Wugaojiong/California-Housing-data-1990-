@@ -7,7 +7,7 @@ plt.style.use('seaborn-v0_8')
 st.title('California Housing Data (1990) by Gaojiong Wu')
 df = pd.read_csv('housing.csv')
 minimal_median_house_filter = st.slider('Minimal Median House Price:', 0, 500001, 200000)
-
+st.text('See more filters in the sidebar')
 ocean_proximity_filter = st.sidebar.multiselect(
      'Choose the location type', 
      df.ocean_proximity.unique(), 
