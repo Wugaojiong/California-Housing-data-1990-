@@ -32,7 +32,6 @@ st.map(df)
 
 
 st.subheader('Median house value')
-fig, ax = plt.subplots(figsize=(20, 5))
-plt.style.use('seaborn-v0_8')
-df['median_house_value'].hist(bins=30, ax=ax, rwidth=1)
+fig, ax = plt.subplots(figsize=(20, 10))
+df.median_house_value.plot.hist(ax=ax,bins=30)
 st.pyplot(fig)
