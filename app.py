@@ -30,10 +30,9 @@ elif income_level == 'High':
 
 st.map(df)
 
+
 st.subheader('Median house value')
 fig, ax = plt.subplots(figsize=(20, 5))
-fig, ax = plt.subplots(figsize=(20, 5))
-plt.style.use('seaborn-v0_8')
-median_value_counts = df['median_house_value'].value_counts().sort_index()
-median_value_counts.plot.bar(ax=ax, width=0.8)
+Median_house_value = df.median_house_value.hist(bins=30，rwidth=1)
+Median_house_value.plot.bar(ax=ax)
 st.pyplot(fig)
