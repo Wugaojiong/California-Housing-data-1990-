@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set()
+plt.style.use('seaborn-v0_8')
 
 st.title('California Housing Data (1990) by Gaojiong Wu')
 df = pd.read_csv('housing.csv')
