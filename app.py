@@ -19,7 +19,7 @@ income_level = st.sidebar.radio('Choose income level:', ['Low', 'Medium', 'High'
 
 df = df[df.median_house_value >= minimal_median_house_filter]
 
-
+df = df[df.ocean_proximity.isin(ocean_proximity_filter)]
 
 if income_level == 'Low':
     df = df[df.median_income <= 2.5]
